@@ -5,8 +5,12 @@
 }
 
 body {
-    font-size: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
+    background-color #e7eff9;
+    background-image: linear-gradient(315deg, #cfd6e6 0%, #e7eff9 70%);
+    min-height: 0;
+
 }
 
 .container {
@@ -18,5 +22,88 @@ body {
 header {
     background-image: url(images/banner.jpg);
     background-size: cover;
+    background-position: center center;
     height: 300px;
+    margin-bottom: 1.5rem;
+}
+
+nav {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    margin: 3rem 0 2rem;
+}
+
+.inner-nav {
+    flex: 1;
+}
+
+.logo {
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.big {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.blue {
+    color: #007ff4;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav a {
+    color: black;
+    text-decoration: none; /* ลบเส้นข้างใต้ออก */
+    margin-left: 2rem;
+}
+
+nav a.active { /* คาส active เปลี่ยนสีแค่ HOME*/
+    color: #007ff4;
+}
+
+.col {
+    padding: 1rem;
+    flex: 1;
+}
+
+.col img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+button {
+    background-color: #007ff4;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0262bd;
 }
